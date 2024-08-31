@@ -22,7 +22,7 @@ const Register = () => {
         const { username, fullname, password } = formData;
         if (username && fullname && password) {
             try {
-                const response = await axios.post('http://localhost/Project%20CA/project-CA-api/account.php', formData, {
+                const response = await axios.post('http://localhost/Project-CA/project-CA-api/account.php', formData, {
                     headers: {
                         'Content-Type': 'application/json'
                     }

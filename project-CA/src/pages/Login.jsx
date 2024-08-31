@@ -21,7 +21,7 @@ const Login = () => {
         const { username, password } = formData;
         if (username && password) {
             try {
-                const response = await axios.post('http://localhost/Project%20CA/project-CA-api/auth.php', {
+                const response = await axios.post('http://localhost/Project-CA/project-CA-api/auth.php', {
                     username,
                     password
                 });

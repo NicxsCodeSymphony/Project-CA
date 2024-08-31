@@ -14,7 +14,7 @@ const Chats = () => {
     useEffect(() => {
         const fetchMessages = async () => {
             try {
-                const url = `http://localhost/Project%20CA/project-CA-api/chats.php?sender_id=${senderId}&receiver_id=${receiverId}`;
+                const url = `http://localhost/Project-CA/project-CA-api/chats.php?sender_id=${senderId}&receiver_id=${receiverId}`;
                 const response = await axios.get(url);
 
                 if (response.data.length > 0) {
@@ -35,7 +35,7 @@ const Chats = () => {
     const handleSendMessage = async () => {
         if (input.trim()) {
             try {
-                await axios.post('http://localhost/Project%20CA/project-CA-api/chats.php', {
+                await axios.post('http://localhost/Project-CA/project-CA-api/chats.php', {
                     sender_id: senderId,
                     receiver_id: receiverId,
                     text: input

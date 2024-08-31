@@ -9,7 +9,7 @@ const ChatList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://localhost/Project%20CA/project-CA-api/account.php');
+                const res = await axios.get('http://localhost/Project-CA/project-CA-api/account.php');
                 setAccounts(res.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
